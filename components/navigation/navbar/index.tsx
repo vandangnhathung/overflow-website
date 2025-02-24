@@ -1,10 +1,12 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+
+import Theme from "./Theme";
 
 const Navbar = () => {
   return (
-    <nav className="dark:bg-dark-200 h-[53px] px-5 flex-center-v justify-between">
+    <nav className="flex-center-v h-[53px] justify-between px-5 dark:bg-dark-200">
       <Link href="/" className="flex-center gap-x-1.5 font-space-grotesk">
         <Image
           src="/images/site-logo.svg"
@@ -18,7 +20,9 @@ const Navbar = () => {
         </p>
       </Link>
 
-      <div>something else...</div>
+      <div>
+        <Theme />
+      </div>
     </nav>
   );
 };
